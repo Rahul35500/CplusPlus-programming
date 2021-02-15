@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void findMaxLenSubarray(int arr[], int n, int S)
+void maximum_length_array(int arr[], int n, int S)
 {
     int length = 0;
 
@@ -33,7 +33,6 @@ void findMaxLenSubarray(int arr[], int n, int S)
         cout << arr[i] << " ";
     }
     cout << "}";
-   // printf("[%d, %d]", index - length + 1, index);
 }
 
 int main(void)
@@ -43,7 +42,7 @@ int main(void)
 
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    findMaxLenSubarray(arr, n, sum);
+    maximum_length_array(arr, n, sum);
 
     return 0;
 }
